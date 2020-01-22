@@ -22,11 +22,17 @@
     "styled-components": "4.4.1",
     "typescript": "3.7.4"
   },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
   "scripts": {
     "build": "yarn lint && NODE_ENV=production parcel build src/index.html --no-cache",
     "dev": "yarn clean && parcel src/index.html -p 3000",
     "lint": "tsc --noEmit --skipLibCheck && eslint 'src/**/*.{js,ts,tsx}' --max-warnings=0",
     "format": "eslint 'src/**/*.{js,ts,tsx}' --max-warnings=0 --fix",
     "clean": "rm -rf .cache && rm -rf ./dist/* && mkdir -p ./dist"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
   }
 }

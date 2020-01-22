@@ -1,5 +1,10 @@
 declare const module: { hot: { accept: () => void } }
 
+declare module '*.png' {
+  const value: any
+  export = value
+}
+
 interface IconProps {
   color?: string
   className?: string

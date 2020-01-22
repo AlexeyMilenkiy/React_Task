@@ -1,7 +1,15 @@
 # 📦 React / TypeScript starter project
 
-    $ yarn
-    $ yarn dev
+## Scripts to get started
+
+* Project requires to have a Google account with access to Google Cloud storage (GCS)
+* Using your GCS credentials, add PROJECT_ID, CLIENT_ID and API_KEY to credentials.ts 
+
+* Then, start scripts to run the app:
+  ```
+  $ yarn
+  $ yarn dev
+  ```
 
 ## Conventions
 
